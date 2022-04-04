@@ -45,7 +45,7 @@ app.get('/scores', (req, res) => {
         res.send(err)
       }
 
-      res.json([regions])
+      res.json({scoreList: regions})
     })
 });
 
