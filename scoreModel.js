@@ -5,6 +5,9 @@ const {Schema} = mongoose;
  * Create database scheme for scores
  */
 const scoreSchema = new Schema({
+  _id: {
+    type: String
+  },
   username: {
     type: String
   },
