@@ -6,7 +6,8 @@ const {Schema} = mongoose;
  */
 const scoreSchema = new Schema({
   _id: {
-    type: String
+    type: Schema.ObjectId, 
+    auto: true
   },
   username: {
     type: String
