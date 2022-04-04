@@ -29,7 +29,7 @@ app.use((err, req, res, next) => {
 
 // CORS
 const corsOptions = {
-  origin: ['http://localhost:4200', 'http://davidxps15:4200', 'http://localhost', 'http://davidxps15'],
+  origin: ['https://davidjs.itch.io'],
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 app.use(cors(corsOptions))
