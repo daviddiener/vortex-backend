@@ -29,7 +29,7 @@ app.use((err, req, res, next) => {
 
 // CORS
 const corsOptions = {
-  origin: ['https://davidjs.itch.io', 'https://v6p9d9t4.ssl.hwcdn.net'],
+  origin: ['https://davidjs.itch.io', 'https://v6p9d9t4.ssl.hwcdn.net', 'https://html-classic.itch.zone'],
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 app.use(cors(corsOptions))

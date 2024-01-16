@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "docker:build": "docker build -t ghcr.io/daviddiener/vortex-backend .",
+    "docker:run": "docker run --env-file .\\prod.env -p 127.0.0.1:3000:3000 ghcr.io/daviddiener/vortex-backend",
+    "docker:push": "docker push ghcr.io/daviddiener/vortex-backend"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +24,7 @@
     "@babel/core": "^7.17.8",
     "@babel/node": "^7.16.8",
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^3.0.2"
   }
 }
